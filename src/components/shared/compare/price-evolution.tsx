@@ -49,7 +49,9 @@ export function PriceEvolution({ watches }: PriceEvolutionProps) {
       <div className="p-6">
         <div className="flex items-center justify-between mb-6">
           <div>
-            <h2 className="text-xl font-bold mb-2 text-darkest">Price Evolution</h2>
+            <h2 className="text-xl font-bold mb-2 text-darkest">
+              Price Evolution
+            </h2>
             <div className="flex gap-2">
               {watches.map((watch, index) => (
                 <Badge

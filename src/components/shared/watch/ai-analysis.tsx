@@ -35,7 +35,9 @@ export function AIAnalysis({ onClose }: AIAnalysisProps) {
           <div className="flex items-center justify-between p-6 border-b border-[#ECECEC]/30">
             <div>
               <h2 className="text-xl font-bold">AI Market Analysis</h2>
-              <p className="text-darkest/70">GMT Master II Pepsi Price Trends</p>
+              <p className="text-darkest/70">
+                GMT Master II Pepsi Price Trends
+              </p>
             </div>
             <Button
               variant="ghost"

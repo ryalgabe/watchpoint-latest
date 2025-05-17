@@ -1,6 +1,12 @@
 'use client'
 
-import { Search, SlidersHorizontal, Clock, Flame, DollarSign } from 'lucide-react'
+import {
+  Search,
+  SlidersHorizontal,
+  Clock,
+  Flame,
+  DollarSign,
+} from 'lucide-react'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { AuctionCard } from './auction-card'
@@ -173,7 +179,7 @@ export function AuctionsLayout() {
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div className="flex-1 max-w-2xl">
               <h1 className="text-2xl font-bold text-darkest inline-flex gap-3 items-center">
-                <DollarSign className="text-darkest/80 bg-darkest/10 rounded-lg p-1"/>
+                <DollarSign className="text-darkest/80 bg-darkest/10 rounded-lg p-1" />
                 Auctions
               </h1>
               <p className="text-darkest/70">
@@ -209,7 +215,6 @@ export function AuctionsLayout() {
         {showFilters && <AuctionFilters className="mb-8" />}
 
         <div className="grid grid-cols-1 gap-8">
-
           <section>
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-2">

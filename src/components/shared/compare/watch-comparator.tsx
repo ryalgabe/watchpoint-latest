@@ -67,26 +67,25 @@ export function WatchComparator() {
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
               <div className="flex-1 max-w-2xl">
                 <h1 className="text-2xl font-bold text-darkest mb-2 inline-flex gap-3 items-center">
-                  <GitCompare className="text-darkest/80 bg-darkest/10 rounded-lg p-1"/>
+                  <GitCompare className="text-darkest/80 bg-darkest/10 rounded-lg p-1" />
                   Watch Comparator
                 </h1>
                 <p className="text-darkest/70">
                   Compare specifications and market performances
                 </p>
               </div>
-                <Button
-                  className="bg-gradient-to-r from-darkest/5 to-main-background hover:from-darkest/10 hover:to-darkest/5"
-                  variant = "ghost"
-                  onClick={() => setIsSearchOpen(true)}
-                  disabled={selectedWatches.length >= 3}
-                  >
-                  <Plus className="w-5 h-5 mr-2" />
-                  Add Watch
+              <Button
+                className="bg-gradient-to-r from-darkest/5 to-main-background hover:from-darkest/10 hover:to-darkest/5"
+                variant="ghost"
+                onClick={() => setIsSearchOpen(true)}
+                disabled={selectedWatches.length >= 3}
+              >
+                <Plus className="w-5 h-5 mr-2" />
+                Add Watch
               </Button>
             </div>
           </div>
         </div>
-        
 
         {/* Watch Selection Area */}
         {selectedWatches.length === 0 ? (
@@ -100,10 +99,9 @@ export function WatchComparator() {
               </div>
               <p className="text-[#878787]">Add Watch to Compare</p>
             </button>
-            <div className="flex flex-col items-center justify-center h-full border-2 border-dashed border-darkest/10 rounded-[38px] bg-transparent"/>
-            <div className="flex flex-col items-center justify-center h-full border-2 border-dashed border-darkest/10 rounded-[38px] bg-transparent"/>
+            <div className="flex flex-col items-center justify-center h-full border-2 border-dashed border-darkest/10 rounded-[38px] bg-transparent" />
+            <div className="flex flex-col items-center justify-center h-full border-2 border-dashed border-darkest/10 rounded-[38px] bg-transparent" />
           </div>
-
         ) : (
           <div className="space-y-8">
             {/* Watch Cards */}
@@ -119,14 +117,14 @@ export function WatchComparator() {
               ))}
               {selectedWatches.length < 3 && (
                 <button
-                onClick={() => setIsSearchOpen(true)}
-                className="h-full rounded-[38px] bg-gradient-to-t from-darkest/5 to-main-background  border-2 border-dashed border-darkest/10 hover:border-2 hover:border-dashed hover:border-darkest/20 transition-colors duration-200 flex flex-col items-center justify-center gap-4"
-              >
-                <div className="w-12 h-12 rounded-full bg-none flex items-center justify-center">
-                  <Plus className="w-6 h-6 text-darkest/50" />
-                </div>
-                <p className="text-[#878787]">Add Watch to Compare</p>
-              </button>
+                  onClick={() => setIsSearchOpen(true)}
+                  className="h-full rounded-[38px] bg-gradient-to-t from-darkest/5 to-main-background  border-2 border-dashed border-darkest/10 hover:border-2 hover:border-dashed hover:border-darkest/20 transition-colors duration-200 flex flex-col items-center justify-center gap-4"
+                >
+                  <div className="w-12 h-12 rounded-full bg-none flex items-center justify-center">
+                    <Plus className="w-6 h-6 text-darkest/50" />
+                  </div>
+                  <p className="text-[#878787]">Add Watch to Compare</p>
+                </button>
               )}
             </div>
 

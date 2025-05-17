@@ -34,7 +34,9 @@ export function ComparisonMetrics({ watches }: ComparisonMetricsProps) {
   return (
     <Card className="bg-darkest/5 border-none">
       <div className="p-6">
-        <h2 className="text-xl font-bold mb-6 text-darkest">Price Comparison</h2>
+        <h2 className="text-xl font-bold mb-6 text-darkest">
+          Price Comparison
+        </h2>
         <Table>
           <TableHeader>
             <TableRow className="border-darkest/10 hover:bg-transparent">

@@ -194,7 +194,8 @@ export function MarketIndexLayout() {
                   <p className="">
                     WatchPoint market indexes serve as the gold standard for
                     tracking price trends on the secondary watch market, and are
-                    trusted by top watch brands and financial institutions.<br></br>
+                    trusted by top watch brands and financial institutions.
+                    <br></br>
                     <Button
                       variant="link"
                       className="text-[#2E62E8] p-0 h-auto text-sm mt-2"
@@ -227,7 +228,7 @@ export function MarketIndexLayout() {
                 {/* Overall Section */}
                 <div className="space-y-4">
                   <h3 className="text-lg font-medium">Overall</h3>
-                  <IndexRow index={marketData[0]}/>
+                  <IndexRow index={marketData[0]} />
                 </div>
 
                 {/* Brands Section */}

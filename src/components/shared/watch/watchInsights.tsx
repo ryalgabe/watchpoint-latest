@@ -100,7 +100,6 @@ export function WatchInsights() {
                       <Hash className="w-4 h-4 mr-1" />
                       6708-5551-0001
                     </span>
-
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
@@ -109,9 +108,7 @@ export function WatchInsights() {
                       Current Market Value
                     </p>
                     <div className="flex items-center gap-2">
-                      <p className="text-3xl font-bold text-darkest">
-                        $42,426
-                      </p>
+                      <p className="text-3xl font-bold text-darkest">$42,426</p>
                       <ArrowUpRight className="w-6 h-6 text-darkest/30" />
                     </div>
                   </div>
@@ -185,7 +182,9 @@ export function WatchInsights() {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-6">
                   <div>
-                    <h2 className="text-xl font-bold mb-1 text-darkest">Price History</h2>
+                    <h2 className="text-xl font-bold mb-1 text-darkest">
+                      Price History
+                    </h2>
                     <p className="text-darkest/70">
                       Last 5 years market performance
                     </p>
@@ -202,30 +201,29 @@ export function WatchInsights() {
                 <div className="h-[400px]">
                   <PriceChart />
                   <div className="flex items-left mt-6 gap-4">
-                  <Button
-                    variant="outline"
-                    className="bg-darkest/5 border-none hover:bg-darkest/5 text-darkest hover:text-[#2E62E8] transform active:scale-95 transition-all duration-200"
-                    onClick={() => setShowAIAnalysis(true)}
-                  >
-                    Analyze price trends
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="bg-darkest/5 border-none hover:bg-darkest/5 text-darkest hover:text-[#2E62E8] transform active:scale-95 transition-all duration-200"
-                    onClick={() => setShowAIAnalysis(true)}
-                  >
-                    Compare with similar models
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="bg-darkest/5 border-none hover:bg-darkest/5 text-darkest hover:text-[#2E62E8] transform active:scale-95 transition-all duration-200"
-                    onClick={() => setShowAIAnalysis(true)}
-                  >
-                    Predict future value
-                  </Button>
+                    <Button
+                      variant="outline"
+                      className="bg-darkest/5 border-none hover:bg-darkest/5 text-darkest hover:text-[#2E62E8] transform active:scale-95 transition-all duration-200"
+                      onClick={() => setShowAIAnalysis(true)}
+                    >
+                      Analyze price trends
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="bg-darkest/5 border-none hover:bg-darkest/5 text-darkest hover:text-[#2E62E8] transform active:scale-95 transition-all duration-200"
+                      onClick={() => setShowAIAnalysis(true)}
+                    >
+                      Compare with similar models
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="bg-darkest/5 border-none hover:bg-darkest/5 text-darkest hover:text-[#2E62E8] transform active:scale-95 transition-all duration-200"
+                      onClick={() => setShowAIAnalysis(true)}
+                    >
+                      Predict future value
+                    </Button>
                   </div>
                 </div>
-                
               </div>
             </Card>
           </div>

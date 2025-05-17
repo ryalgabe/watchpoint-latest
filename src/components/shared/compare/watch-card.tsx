@@ -43,20 +43,20 @@ export function WatchCard({ watch, index, total, onRemove }: WatchCardProps) {
       </div>
       <div className="mt-6">
         <div className="flex items-center gap-2">
-            <Badge
-              variant="outline"
-              className="bg-primary/5 text-darkest/50 backdrop-blur-sm border-none"
-            >
-              {index} of {total} watches
-            </Badge>
+          <Badge
+            variant="outline"
+            className="bg-primary/5 text-darkest/50 backdrop-blur-sm border-none"
+          >
+            {index} of {total} watches
+          </Badge>
         </div>
         <div className="flex items-start justify-between mt-4">
           <div className="flex gap-2">
-          
-            <h3 className="text-lg font-semibold mb-1 text-darkest">{watch.brand} {watch.model}</h3>
-            <Watch className='text-darkest/70 w-5'></Watch>
+            <h3 className="text-lg font-semibold mb-1 text-darkest">
+              {watch.brand} {watch.model}
+            </h3>
+            <Watch className="text-darkest/70 w-5"></Watch>
             {watch.nickname && (
-              
               <p className="text-lg text-darkest/80">{watch.nickname}</p>
             )}
           </div>
@@ -66,9 +66,7 @@ export function WatchCard({ watch, index, total, onRemove }: WatchCardProps) {
             className="h-icon rounded-full text-darkest/50 hover:text-none"
             // On click, fill text becomes red
             onClick={() => {
-              const textElement = document.querySelector(
-                '.h'
-              ) as HTMLElement
+              const textElement = document.querySelector('.h') as HTMLElement
               if (textElement) {
                 textElement.getAttribute('fill') === 'transparent'
                   ? textElement.setAttribute('fill', 'red')
@@ -77,7 +75,7 @@ export function WatchCard({ watch, index, total, onRemove }: WatchCardProps) {
               }
             }}
           >
-            <Heart className="h w-4 h-4" fill="transparent"/>
+            <Heart className="h w-4 h-4" fill="transparent" />
           </Button>
         </div>
         <div className="flex gap-3">

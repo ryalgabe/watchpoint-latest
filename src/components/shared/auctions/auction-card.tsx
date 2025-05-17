@@ -37,9 +37,7 @@ export function AuctionCard({ auction, isLive }: AuctionCardProps) {
           className="object-contain transition-transform duration-300 group-hover:scale-105 shadow-xl"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-main-background/30 to-transparent opacity-100" />
-        <div className="absolute top-4 left-4 flex gap-2">
-
-        </div>
+        <div className="absolute top-4 left-4 flex gap-2"></div>
       </div>
 
       <div className="p-5 space-y-4 flex-1 flex flex-col">
@@ -73,16 +71,15 @@ export function AuctionCard({ auction, isLive }: AuctionCardProps) {
           <div className="flex flex-wrap gap-2 pt-2">
             {Object.entries(auction.watchDetails).map(([key, value]) =>
               typeof value === 'boolean' ? (
-                value && (null
-                  //<Badge
-                  //  key={key}
-                  //  variant="secondary"
-                  //  className="bg-darkest/5 text-darkest/70 border border-[#ECECEC]/30"
-                  //>
-                  //</div>  {key[0].toUpperCase() + key.slice(1).toLowerCase()}
-                  //</Badge>
-                )
+                value && null
               ) : (
+                //<Badge
+                //  key={key}
+                //  variant="secondary"
+                //  className="bg-darkest/5 text-darkest/70 border border-[#ECECEC]/30"
+                //>
+                //</div>  {key[0].toUpperCase() + key.slice(1).toLowerCase()}
+                //</Badge>
                 <Badge
                   key={key}
                   variant="secondary"
